@@ -1,0 +1,115 @@
+ :root{
+    --mainColor: #d71b5d;
+}
+.later{
+    color: var(--mainColor);
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/images03.jpg);
+    background-position: center center;
+    background-size: 70%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#home .content h2{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+#home .content a:hover{
+    color: var(--mainColor);
+}
+/*  */
+
+#home .navbar .navbar-nav .nav-link{
+    color: white;
+}
+/*  */
+#home .icon i{
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+#home .icon i:hover{
+    border-color: var(--mainColor) !important; 
+    cursor: pointer;
+}
+/* end-home */
+
+#service .service-item h3::after{
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s all;
+}
+#service .service-item:hover h3::after{
+    width: 60px;
+}
+/* end-service */
+
+#work ul.nav-pills .nav-link.active{
+    background-color: var(--mainColor);
+    color: white;
+}
+#work ul.nav-pills .nav-link{
+    color: black;
+}
+
+/*  */
+#work .tab-content .work-item{
+    border-radius: 5px;
+    overflow: hidden;
+}
+#work .tab-content .work-item .work-layer{
+    background-color: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: all .5s;
+}
+#work .tab-content .work-item:hover .work-layer{
+    opacity: 1;
+}
+#work .tab-content .work-item .layer-title{
+   top: 100%;
+    transition: all .5s;
+    transition-delay: .1s;
+}
+#work .tab-content .work-item:hover .layer-title{
+    top: 0;
+}
+#work .tab-content .work-item .item-img{
+    transition: all .5s;
+}
+#work .tab-content .work-item:hover .item-img{
+    transform: scale(1.2);
+}
+/*  */
+/*  */
+.client-img img{
+    border: 7px solid white;
+}
+#client .carousel-indicators button{
+    width: 20px;
+    height: 5px;
+    border-radius: 47%;
+    background-color: var(--mainColor);
+    transition: all .5s;
+}
+#client .carousel-indicators button.active{
+    width: 30px;
+    
+}
+
